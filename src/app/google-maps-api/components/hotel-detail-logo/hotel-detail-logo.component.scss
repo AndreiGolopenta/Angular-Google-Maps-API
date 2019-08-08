@@ -1,0 +1,31 @@
+div {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  img {
+    width: 408px;
+    height: 272px;
+  }
+  div {
+    font-size: 20px;
+    font-weight: 400;
+    div:first-child {
+      position: relative;
+      top: 155px;
+      left: 67px;
+      .material-icons {
+        font-size: 20px;
+        position: relative;
+        top: 3px;
+        color: #1A73E8;
+      }
+      
+    }
+    div:last-child {
+      position: relative;
+      top: 150px;
+      left: 102px;
+    }
+    
+  }
+}

@@ -1,0 +1,28 @@
+h3 {
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+.name-rating-star {
+  height: 38px;
+  box-shadow: 0 3px 4px -4px #6e6e6e98;
+  .rating-number {
+    position: relative;
+    left: 20px;
+    top: 5px;
+  }
+  .stars {
+    position: relative;
+    top: -14px;
+    left: 43px;
+    .material-icons {
+      font-size: 16px;
+      color: #fbbc04;
+    }
+    .reviews-number {
+      position: relative;
+      top: -2.5px;
+      left: 3px;
+    }
+  }
+}

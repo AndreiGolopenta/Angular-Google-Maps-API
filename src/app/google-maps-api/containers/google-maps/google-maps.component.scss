@@ -1,0 +1,41 @@
+.app {
+  display: flex;
+  agm-map {
+    z-index: 2;
+  }
+  .hotels-list {
+    h3 {
+      position: relative;
+      top: 30px;
+      left: 25px;
+    }
+    div {
+      position: relative;
+      top: 45px;
+      left: 25px;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      ul {
+        margin-bottom: 30px;
+        .hotels-list {
+          background: #ffffff;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .hotel-detail {
+    box-sizing: border-box;
+    z-index: 3;
+    box-shadow: -10px 0px 21px -4px #22222286, 10px 0px 21px -4px #22222286;
+  }
+
+  hotel-search {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,30 @@
+$selected-color: #1A73E8;
+$hover-color: #F7F7F7;
+$text-selected-color: #fff;
+
+@mixin colors($color: true) {
+  @if $color {
+    background: $selected-color;
+    color: $text-selected-color;
+    font-weight: 500;
+  } @else {
+    background: $hover-color;
+    font-weight: 500;
+  }
+}
+
+li {
+  cursor: pointer;
+  width: 250px;
+  padding-bottom: 3px;
+  padding: 0 5px;
+  &.selected {
+    @include colors($color: true);
+  }
+  &:hover {
+    @include colors($color: false);
+    &.selected {
+      @include colors($color: true);
+    }
+  }
+}

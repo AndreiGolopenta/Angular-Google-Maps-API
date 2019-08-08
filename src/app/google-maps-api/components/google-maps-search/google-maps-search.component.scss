@@ -1,0 +1,30 @@
+div {
+  input {
+    border: none;
+    background: #fff;
+    font-size: 13px;
+    padding: 6px 10px 6px 10px;
+    box-shadow: -5px 0px 21px -4px #22222286, 5px 0px 21px -4px #22222286,
+      0px 5px 21px -4px #22222286, 0px -5px 21px -4px #22222286;
+    border: 1px solid #22222286;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+  }
+  button {
+    background: #1A73E8;
+    position: relative;
+    top: 4px;
+    border: 1px solid #22222286;
+    border-radius: 0 15px 15px 0;
+    outline: none;
+    &:hover {
+      background: #1558af;
+    }
+    .material-icons {
+      color: #fff;
+      position: relative;
+      top: 3px;
+      left: -1px;
+    }
+  }
+}
