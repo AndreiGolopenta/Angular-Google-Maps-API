@@ -1,27 +1,59 @@
-# GoogleMaps
+# Angular - Google Maps API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+## Description
 
-## Development server
+This application let the user to view a list of hotels in an area, interacting with markers on the map or titles from the list to get info. Also a search function is available.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Screenshot :
+![alt text](https://raw.githubusercontent.com/AndreiGolopenta/Angular-Google-Maps-API/master/src/assets/image1.png)
 
-## Code scaffolding
+## Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* JSON Server
+* A Google Maps API key.
 
-## Build
+### JSON Server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Install JSON Server : 
+```cli
+npm install -g json-server
+```
 
-## Running unit tests
+### API keys
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Each Google Maps Web Service request requires an API key. To get an API key, follow the [Get API Key](https://developers.google.com/maps/documentation/javascript/get-api-key) instructions in our Maps JS API docs.
 
-## Running end-to-end tests
+When you have an API key, change your_API_key in `google-maps-api.module.ts` :
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```typescript
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [ 
+    AgmCoreModule.forRoot({
+      apiKey: 'your_API_key'
+    })
+  ],
+  exports: [
+    ...
+  ],
+  providers: [
+   ...
+  ],
+})
+```
 
-## Further help
+## Project Dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`npm install`
+
+## Running the project
+
+```cli
+json-server --watch db.json
+```
+```cli
+npm run start
+```
+
