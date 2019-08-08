@@ -4,7 +4,8 @@
 
 This application let the user to view a list of hotels in an area, interacting with markers on the map or titles from the list to get info. Also a search function is available.
 
-Screenshot :
+__Screenshot__
+
 ![alt text](https://raw.githubusercontent.com/AndreiGolopenta/Angular-Google-Maps-API/master/src/assets/image1.png)
 
 ## Requirements
